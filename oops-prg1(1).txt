@@ -1,0 +1,69 @@
+while True:
+ q = int(input(" 1. String Operations \n 2. Tuple Operations \n 3. exit \n "))
+ if q == 1:
+  f1 = 1
+  while(f1 == 1):
+   str1 = input("Enter 1st String: ")
+   str2 = input("Enter 2nd String: ")
+   ch = int(input("Enter the choice for String operations: "))
+   if ch == 1:
+    print("Length of String 1", len(str1))
+   elif ch == 2:
+    print("Reversing of String 1", str1[::-1])
+   elif ch == 3:
+    print("Slicing String 1: ", str1[1:3])
+   elif ch == 4:
+    c = input("Enter character to search in String 2: ")
+    print("Counting character", c, "in String 2: ", str2.count(c))
+   elif ch == 5:
+    print("Concatenating two String: ", str1+str2)
+   elif ch == 6:
+    print("Convert String 1 to uppercase: ", str1.upper())
+   elif ch == 7:
+    print("Convert String 1 to lowercase: ", str1.lower())
+   elif ch == 8:
+    print("Capitalizing of String 2: ", str2.capitalize())
+   elif ch == 9:
+    a = input("Enter which character to replace: ")
+    b = input("Enter character to be replaced with: ")
+    print("Replacing ",a ," with ",b ,":",str1.replace(a,b))
+   elif ch == 10:
+    print("Checking String 1 in Capitalized form: ", str1.istitle())
+   else:
+    print("Invalid choice")
+   f1 = int(input("Do u want continue(y=1/n=0):"))
+ elif q == 2:
+  f2 = 1
+  while(f2 == 1):
+   tup1 = tuple(input("Enter 1st Tuple: ").split())
+   tup2 = tuple(input("Enter 2nd Tuple: ").split())
+   ch = int(input("Enter the choice for Tuple operations: "))
+   if ch == 1:
+    print("Length of Tuple 1: ", len(tup1))
+   elif ch == 2:
+    print("Reversing of Tuple 1: ", tup1[::-1])
+   elif ch == 3:
+    print("Slicing Tuple 1: ", tup1[1:3])
+   elif ch == 4:
+    c = input("Enter element to search in Tuple 2: ")
+    print("Counting element", c, "in Tuple 2: ", tup2.count(c))
+   elif ch == 5:
+    print("Concatenating two Tuple: ", tup1+tup2)
+   elif ch == 6:
+    print("Max of Tuple1: ", max(tup1))
+   elif ch == 7:
+    print("Min of Tuple2: ", min(tup1))
+   elif ch == 8:
+    ele = input("enter the element to find its index: ")
+    print("Index value of Tuple 2: ", tup2.index(ele))
+   elif ch == 9:
+    i = int(input("Enter how many times to be repeated: "))
+    print("Repetition of Tuple 1: ",tup1 * i)
+   elif ch == 10:
+    print("Last element in Tuple 1: ", tup1[-1])
+   else:
+    print("Invalid choice")
+   f2 = int(input("Do u want continue(y=1/n=0):"))
+ else:
+  print("bye")
+  exit()
